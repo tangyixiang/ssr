@@ -1,4 +1,4 @@
-FROM yixiang94/ssr
+FROM yixiang94/ssr:1.0
 
 EXPOSE 443
 
