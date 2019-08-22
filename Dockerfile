@@ -1,4 +1,4 @@
-FROM tyx851565913/tyx-ssr
+FROM yixiang94/ssr
 
 EXPOSE 443
 
