@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 
 EXPOSE 443
-RUN apt -y update && apt -y upgrade && apt-get install software-properties-common
+RUN apt -y update && apt -y upgrade && apt-get -y install software-properties-common
 RUN apt -y install shadowsocks
 
 RUN echo "{\n\
