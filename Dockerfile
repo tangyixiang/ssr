@@ -1,9 +1,7 @@
 FROM ubuntu:18.04
 
 EXPOSE 443
-
-RUN apt-get install python-software-properties
-RUN add-apt-repository universe && apt -y update && apt -y upgrade
+RUN apt -y update && apt -y upgrade && apt-get install software-properties-common
 RUN apt -y install shadowsocks
 
 RUN echo "{\n\
