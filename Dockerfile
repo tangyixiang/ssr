@@ -2,7 +2,9 @@ FROM ubuntu:18.04
 
 EXPOSE 443
 
-RUN apt-get install software-properties-common python-software-properties && apt -y update && apt -y upgrade && apt -y install shadowsocks
+RUN apt-get install software-properties-common python-software-properties
+RUN apt -y update && apt -y upgrade
+RUN apt -y install shadowsocks
 
 RUN echo "{\n\
     "server":"0.0.0.0",\n\
